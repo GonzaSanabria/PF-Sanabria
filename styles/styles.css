@@ -262,8 +262,10 @@ div>h2 {
 
 /* Contactos */
 
-#contactoStyle {
-    height: 100vh;
+.contactoStyleContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #contactoStyle h1 {
@@ -273,9 +275,6 @@ div>h2 {
     padding: 10px;
 }
 
-.containerContacto {
-    justify-content: center;
-}
 
 .contactoPadding {
     margin: 20px;
@@ -298,6 +297,10 @@ div>h2 {
 .contactoColorBoton:hover {
     color: orange;
     background-color: orange;
+}
+
+.containerContacto {
+   width: 50%;
 }
 
 /* ---------------------------------------------------------------------------------------------*/
