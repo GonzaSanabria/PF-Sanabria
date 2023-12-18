@@ -27,6 +27,16 @@ footer {
     background-color: rgba(27, 27, 27, 0.966);
 }
 
+.boxLinksFooter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxSocialMediaFooter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .logoSocialMediaFooter {
     height: 50px;
     width: 50px;
@@ -168,9 +178,6 @@ justify-content: space-around;
 height: 140px;
 margin: 15px;
 }
-
-
-
 /* ---------------------------------------------------------------------------------------------*/
 
 /* servicios*/
