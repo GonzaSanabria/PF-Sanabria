@@ -81,6 +81,14 @@ header nav ul li {
     width: 100px;
 }
 
+.navbar-toggler {
+    background-color: antiquewhite;
+}
+
+.navbar-nav {
+    padding: 0;
+}
+
 /* ---------------------------------------------------------------------------------------------*/
 
 /* Home*/
