@@ -1,7 +1,31 @@
-body {
-  background-color: rgb(255, 255, 255);
+/* base */
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
 }
 
+h1 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+h2 {
+  letter-spacing: 3px;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* layout */
 header nav .navBar {
   margin-bottom: 50px;
 }
@@ -14,6 +38,52 @@ header nav a .logoKamadaWebPage {
   width: 70px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+footer .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+footer .col {
+  flex: 1;
+  text-align: center;
+}
+footer .col:first-child {
+  text-align: left;
+}
+footer .col:last-child {
+  text-align: right;
+}
+footer .col img {
+  max-width: 100px;
+  height: auto;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li {
+  margin: 0 10px;
+  display: inline-block;
+}
+footer ul li a img {
+  max-width: 30px;
+  height: auto;
+}
+
+/* pages */
 .portada {
   padding: 20px;
 }
@@ -97,53 +167,6 @@ header nav a .logoKamadaWebPage {
   }
 }
 
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #f2f2f2;
-  padding: 20px;
-  color: #333;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  text-align: center;
-}
-footer .row {
-  margin-left: 0;
-  margin-right: 0;
-}
-footer .col {
-  flex: 1;
-  text-align: center;
-}
-footer .col:first-child {
-  text-align: left;
-}
-footer .col:last-child {
-  text-align: right;
-}
-footer .col img {
-  max-width: 100px;
-  height: auto;
-}
-footer ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer ul li {
-  margin: 0 10px;
-  display: inline-block;
-}
-footer ul li a img {
-  max-width: 30px;
-  height: auto;
-}
-
-/*-----------------------------------------------------------------------------------------------------------------*/
-/* Pagina de Medias (o sea imagenes) */
 .albums {
   display: flex;
   align-items: center;
@@ -231,8 +254,6 @@ footer ul li a img {
   }
 }
 
-/* ----------------------------------------------------------------------------------------------------- */
-/* Seccion de contactos */
 form {
   display: flex;
   flex-direction: column;
@@ -244,8 +265,6 @@ form {
   justify-content: center;
 }
 
-/* ----------------------------------------------------------------------------------------------------- */
-/* Seccion de merch */
 .remeras {
   display: flex;
   align-items: flex-start;
@@ -275,8 +294,6 @@ img {
     margin-bottom: 100px;
   }
 }
-/* ----------------------------------------------------------------------------------------------------- */
-/* Seccion de integrantes */
 .integrantes-img {
   display: flex;
   text-align: center;
