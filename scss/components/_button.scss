@@ -1,0 +1,14 @@
+.custom-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #99FF33; /* Nuevo color del botón */
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .custom-button:hover {
+    background-color: #c8ff6f; /* Cambia el color al pasar el ratón por encima */
+  }
