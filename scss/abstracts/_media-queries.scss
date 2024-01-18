@@ -1,0 +1,93 @@
+/* MQ pagina merch */
+
+@media (max-width: 425px) {
+    .box-modelos .tarjeta {
+        width: 80%;
+    }
+
+    img {
+        height: 50%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+    .box-modelos .tarjeta {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .box-modelos .tarjeta {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .box-modelos .tarjeta {
+        width: 33.3333%;
+    }
+}
+
+/* MQ pagina home */
+
+@media screen and (max-width: 767px) {
+
+    .tarjeta {
+        width: 80%;
+    }
+}
+
+/* MQ pagina integrantes */
+
+@media (max-width: 767px) {
+    article div {
+        padding: 0;
+        margin: 0;
+    }
+
+    img {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+        padding: 1rem;
+    }
+}
+
+/* MQ pagina media */
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+        padding-left: 0;
+    }
+
+    img {
+        height: 50vh;
+        width: 70%;
+        @include albumImageStyles;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+        padding-left: 0;
+
+    }
+
+    img {
+        height: 40vh;
+        width: 70%;
+        @include albumImageStyles;
+    }
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* base */
 * {
   font-family: "Roboto", sans-serif;
@@ -35,7 +34,7 @@ a {
 .custom-button {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #99FF33; /* Nuevo color del botón */
+  background-color: #99FF33;
   color: #000000;
   text-decoration: none;
   border-radius: 5px;
@@ -44,7 +43,7 @@ a {
 }
 
 .custom-button:hover {
-  background-color: #c8ff6f; /* Cambia el color al pasar el ratón por encima */
+  background-color: #c8ff6f;
 }
 
 /* layout */
@@ -186,15 +185,6 @@ footer ul li a img {
   line-height: 1.5;
   color: #333;
 }
-@media screen and (max-width: 767px) {
-  .box-modelos {
-    flex-direction: column;
-    align-items: center;
-  }
-  .box-modelos .tarjeta {
-    width: 80%;
-  }
-}
 
 .albums {
   display: flex;
@@ -216,12 +206,6 @@ footer ul li a img {
   max-height: 80vh;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   border-radius: 10px;
-}
-@media (max-width: 768px) {
-  .albums h2 {
-    font-size: 1.5rem;
-    padding-left: 0;
-  }
 }
 
 .fotos {
@@ -258,30 +242,6 @@ footer ul li a img {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   border-radius: 10px;
 }
-@media (max-width: 768px) {
-  .fotos h2 {
-    font-size: 1.5rem;
-    padding-left: 0;
-  }
-  .fotos img {
-    height: 50vh;
-    width: 70%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .fotos h2 {
-    font-size: 1.2rem;
-    padding-left: 0;
-  }
-  .fotos img {
-    height: 40vh;
-    width: 70%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 10px;
-  }
-}
 
 form {
   display: flex;
@@ -299,6 +259,9 @@ form {
   align-items: flex-start;
   justify-content: center;
   text-align: center;
+}
+.remeras .merch-text {
+  padding: 10px;
 }
 .remeras .tarjeta {
   font-size: 1rem;
@@ -318,26 +281,6 @@ img {
   margin-bottom: 12px;
 }
 
-@media (max-width: 425px) {
-  .box-modelos .tarjeta {
-    width: 80%;
-  }
-}
-@media (min-width: 426px) and (max-width: 767px) {
-  .box-modelos .tarjeta {
-    width: 80%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .box-modelos .tarjeta {
-    width: 80%;
-  }
-}
-@media (min-width: 1024px) {
-  .box-modelos .tarjeta {
-    width: 33.3333%;
-  }
-}
 .integrantes-img {
   display: flex;
   text-align: center;
@@ -370,18 +313,82 @@ img {
 .integrantes-img .bandaCompleta {
   width: 120%;
 }
+
+/* abstract */
+/* MQ pagina merch */
+@media (max-width: 425px) {
+  .box-modelos .tarjeta {
+    width: 80%;
+  }
+  img {
+    height: 50%;
+  }
+}
+@media (min-width: 426px) and (max-width: 767px) {
+  .box-modelos .tarjeta {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .box-modelos .tarjeta {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .box-modelos .tarjeta {
+    width: 33.3333%;
+  }
+}
+/* MQ pagina home */
+@media screen and (max-width: 767px) {
+  .tarjeta {
+    width: 80%;
+  }
+}
+/* MQ pagina integrantes */
 @media (max-width: 767px) {
-  .integrantes-img article div {
+  article div {
     padding: 0;
     margin: 0;
   }
-  .integrantes-img img {
+  img {
     padding: 1rem;
     margin: 0;
   }
-  .integrantes-img p {
+  p {
     margin: 0;
     padding: 1rem;
+  }
+}
+/* MQ pagina media */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+    padding-left: 0;
+  }
+  img {
+    height: 50vh;
+    width: 70%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+    padding-left: 0;
+  }
+  img {
+    height: 40vh;
+    width: 70%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 10px;
   }
 }
 

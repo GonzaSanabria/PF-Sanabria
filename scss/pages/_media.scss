@@ -27,12 +27,7 @@
     @include albumImageStyles;
   }
 
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 1.5rem;
-      padding-left: 0;
-    }
-  }
+  
 }
 
 .fotos {
@@ -74,30 +69,5 @@
     @include albumImageStyles; 
   }
 
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 1.5rem;
-      padding-left: 0;
-    }
-
-    img {
-      height: 50vh;
-      width: 70%;
-      @include albumImageStyles; 
-    }
-  }
-
-  @media (max-width: 480px) {
-    h2 {
-      font-size: 1.2rem;
-      padding-left: 0;
-    
-    }
-
-    img {
-      height: 40vh;
-      width: 70%;
-      @include albumImageStyles; 
-    }
-  }
+  
 }
