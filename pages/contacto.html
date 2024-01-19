@@ -2,87 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link cdn de bootStrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta name="description"
+    content="Conéctate con Kamada a través de nuestra página de contacto. Estamos aquí para escucharte, responder tus preguntas y recibir tus comentarios. Utiliza nuestro formulario de contacto para enviarnos un mensaje directo o encuentra nuestras redes sociales para mantenernos cerca. Estamos emocionados de conocer a nuestros seguidores y de compartir el amor por la música. ¡No dudes en contactarnos y ser parte de la comunidad Kamada!">
 
-    <link rel="stylesheet" href="../css/styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <title>Contacto</title>
+  <meta name="keywords"
+    content="Contacto con Kamada, Formulario de contacto, Redes sociales Kamada, Conectar con la banda">
+
+  <link rel="shortcut icon" href="./img/kamadaLogo.jpg" type="image/x-icon">
+
+  <!-- Link cdn de AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Link cdn de bootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <!-- Link hoja de estilos -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Link google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Kamada | Contacto</title>
 </head>
 
 <body>
 
-    <header>
+  <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logoKamadaWebPage" src="../img/kamadaLogo.jpg" alt=""></a>
-                <button class="navbar-toggler s" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="ms-auto navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./integrantes.html">Integrantes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./media.html">Media</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./merch.html">Merchandising</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="logoKamadaWebPage" src="../img/kamadaLogo.jpg"
+            alt="Logo pagina web kamada"></a>
+        <button class="navbar-toggler s" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="ms-auto navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./integrantes.html">Integrantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./media.html">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./merch.html">Merchandising</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <div class="container mt-5">
-        <div class="row contact">
-          <!-- Formulario a la izquierda -->
-          <div class="col-md-6">
-            <h1>Contacto</h1>
-            <p>Si te gusta Kamada y te gustaria de estar al tanto de todas las novedades acerca de la banda, podes suscribirte. Ante dudas sobre contrataciones no dudes en escribirnos.</p>
-            
-            <form>
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-              </div>
-              <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido:</label>
-                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">E-mail:</label>
-                <input type="email" class="form-control" id="email" placeholder="E-mail">
-              </div>
-              <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje:</label>
-                <textarea class="form-control" id="mensaje" placeholder="Mensaje" rows="5"></textarea>
-              </div>
-              <button type="submit" class="btn btn-dark contactButton">Enviar</button>
-            </form>
+  <div class="container mt-5">
+    <div class="row contact">
+      <!-- Formulario a la izquierda -->
+      <div class="col-md-6">
+        <h1>Contacto</h1>
+        <p>Si te gusta Kamada y te gustaria de estar al tanto de todas las novedades acerca de la banda, podes
+          suscribirte. Ante dudas sobre contrataciones no dudes en escribirnos.</p>
+
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
           </div>
-      
-        
-   
+          <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="E-mail">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" placeholder="Mensaje" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark contactButton">Enviar</button>
+        </form>
+      </div>
+
+
+
       <hr>
 
       <footer class="row row-cols-2 row-cols-lg-3">
@@ -113,7 +129,7 @@
       </script>
 
       <!-- Link CDN JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
